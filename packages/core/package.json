@@ -1,6 +1,6 @@
 {
   "name": "@atomix-ui/core",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Core atomix styled components",
   "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
   "homepage": "https://atomix.react.design",
@@ -24,7 +24,7 @@
     "react"
   ],
   "dependencies": {
-    "@atomix-ui/button": "^0.0.0",
-    "@atomix-ui/paper": "^0.0.0"
+    "@atomix-ui/button": "^0.0.1",
+    "@atomix-ui/paper": "^0.0.1"
   }
 }
