@@ -10,6 +10,8 @@
     "build": "lerna run build",
     "build:dev": "NODE_ENV=development npm run build",
     "build:prod": "NODE_ENV=production npm run build",
+    "build:storybook": "NODE_ENV=production build-storybook",
+    "deploy:storybook": "NODE_ENV=production storybook-to-ghpages",
     "bs": "lerna bootstrap",
     "postinstall": "npm run bs",
     "clean": "lerna run clean --scope \"@atomix-ui/*\"",
@@ -29,6 +31,7 @@
   "homepage": "https://atomix.react.design",
   "devDependencies": {
     "@storybook/react": "^3.2.8",
+    "@storybook/storybook-deployer": "^2.0.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-plugin-styled-components": "^1.2.0",
