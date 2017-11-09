@@ -1,0 +1,27 @@
+{
+  "name": "@atomix-ui/shadow",
+  "version": "0.0.0",
+  "description": "Shadows for atomix components",
+  "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
+  "homepage": "https://atomix.react.design",
+  "license": "MIT",
+  "repository": "https://github.com/atomixinteractions/ui/tree/master/packages/shadow",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "babel -d dist src",
+    "clean": "rimraf dist/* coverage/* .lcov-info/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "shadow",
+    "atomix",
+    "ui",
+    "design",
+    "styled",
+    "ui",
+    "react"
+  ]
+}

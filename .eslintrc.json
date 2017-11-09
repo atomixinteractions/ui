@@ -1,0 +1,17 @@
+{
+  "extends": "atomix-react",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-await-in-loop": "off",
+    "react/jsx-no-undef": ["error", { "allowGlobals": true }]
+  },
+  "globals": {
+    "If": true
+  }
+}

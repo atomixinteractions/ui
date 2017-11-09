@@ -1,0 +1,30 @@
+{
+  "name": "@atomix-ui/core",
+  "version": "0.0.0",
+  "description": "Core atomix styled components",
+  "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
+  "homepage": "https://atomix.react.design",
+  "license": "MIT",
+  "repository": "https://github.com/atomix-ui/tree/master/packages/core",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "babel -d dist src",
+    "clean": "rimraf dist/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "atomix",
+    "ui",
+    "design",
+    "styled",
+    "ui",
+    "react"
+  ],
+  "dependencies": {
+    "@atomix-ui/button": "^0.0.0",
+    "@atomix-ui/paper": "^0.0.0"
+  }
+}

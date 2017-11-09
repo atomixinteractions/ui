@@ -1,0 +1,36 @@
+{
+  "name": "@atomix-ui/theming",
+  "version": "0.0.0",
+  "description": "Themes shortcuts for atomix-ui",
+  "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
+  "homepage": "https://atomix.react.design",
+  "license": "MIT",
+  "repository": "https://github.com/atomixinteractions/ui/tree/master/packages/theming",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "babel -d dist src",
+    "clean": "rimraf dist/* coverage/* .lcov-info/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "theming",
+    "atomix",
+    "ui",
+    "design",
+    "styled",
+    "ui",
+    "react"
+  ],
+  "devDependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.1"
+  },
+  "peerDependencies": {
+    "styled-components": "^2.1.1"
+  }
+}
