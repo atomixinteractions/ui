@@ -5,7 +5,7 @@ import { shadows } from '@atomix-ui/shadow'
 import { ifProp } from '@atomix-ui/theming'
 
 
-const Button = styled.div`
+export const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,4 +81,3 @@ Button.defaultProps = {
   flat: false,
 }
 
-export default Button
