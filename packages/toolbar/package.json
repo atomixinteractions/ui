@@ -1,0 +1,42 @@
+{
+  "name": "@atomix-ui/toolbar",
+  "version": "0.0.1",
+  "description": "{Description for Toolbar}",
+  "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
+  "homepage": "https://atomix.react.design",
+  "license": "MIT",
+  "repository": "https://github.com/atomixinteractions/ui/tree/master/packages/toolbar",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "babel -d dist src",
+    "clean": "rimraf dist/* coverage/* .lcov-info/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "toolbar",
+    "atomix",
+    "ui",
+    "design",
+    "styled",
+    "ui",
+    "react"
+  ],
+  "dependencies": {
+    "@atomix-ui/paper": "^0.0.1",
+    "@atomix-ui/shadow": "^0.0.1",
+    "@atomix-ui/theming": "^0.0.1"
+  },
+  "devDependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.1"
+  },
+  "peerDependencies": {
+    "react": "^15.6.1",
+    "styled-components": "^2.1.1"
+  }
+}

@@ -25,6 +25,7 @@
   ],
   "dependencies": {
     "@atomix-ui/button": "^0.0.1",
-    "@atomix-ui/paper": "^0.0.1"
+    "@atomix-ui/paper": "^0.0.1",
+    "@atomix-ui/toolbar": "^0.0.1"
   }
 }
