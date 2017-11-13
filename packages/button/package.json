@@ -1,6 +1,6 @@
 {
   "name": "@atomix-ui/button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Classic Button for styled-components",
   "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
   "homepage": "https://atomix.react.design",
