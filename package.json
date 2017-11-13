@@ -11,7 +11,7 @@
     "build:dev": "NODE_ENV=development npm run build",
     "build:prod": "NODE_ENV=production npm run build",
     "build:storybook": "NODE_ENV=production build-storybook",
-    "deploy:storybook": "NODE_ENV=production storybook-to-ghpages",
+    "deploy:storybook": "NODE_ENV=production storybook-to-ghpages -s public/",
     "bs": "lerna bootstrap",
     "postinstall": "npm run bs",
     "clean": "lerna run clean --scope \"@atomix-ui/*\"",
