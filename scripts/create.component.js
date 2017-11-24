@@ -171,7 +171,7 @@ async function askForCreation(baseName, targetName, list) {
 async function addToScopes(targetName, scopes) {
   const pathName = changeCase.paramCase(targetName)
 
-  if (scopes.length) {
+  if (scopes.length !== 0) {
     for (const scope of scopes) {
       try {
         const packagePath = resolve(__dirname, '..', 'packages', scope, 'package.json')
