@@ -67,6 +67,19 @@ export const Button = styled.div`
       box-shadow: none;
     }
   `)}
+
+  ${ifProp('elegant', css`
+    padding: 30px 35px;
+    border-radius: 50px;
+    box-shadow: ${shadows[10]};
+
+    &:hover {
+      box-shadow: ${shadows[12]};
+    }
+    &:active {
+      box-shadow: ${shadows[18]};
+    }
+  `)}
 `
 
 Button.propTypes = {
@@ -79,5 +92,6 @@ Button.defaultProps = {
   dense: false,
   disabled: false,
   flat: false,
+  elegant: false
 }
 
