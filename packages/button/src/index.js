@@ -86,6 +86,7 @@ Button.propTypes = {
   dense: PropTypes.bool,
   disabled: PropTypes.bool,
   flat: PropTypes.bool,
+  elegant: PropTypes.bool
 }
 
 Button.defaultProps = {
