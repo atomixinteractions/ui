@@ -17,7 +17,7 @@ const mkdirp = pify(require('mkdirp'))
 const REJECTED_PACKAGES = ['core', 'theming', 'shadow']
 const AVAILABLE_BUNDLES = [{ name: 'core', checked: true }]
 const BASE_PACKAGE = 'Paper'
-const INITIAL_VERSION = '0.0.1'
+const INITIAL_VERSION = '0.0.0'
 const LIBRARY_NAME = require('../package.json').name
 
 
