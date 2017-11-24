@@ -60,16 +60,12 @@ export const Button = styled.div`
 `
 
 Button.propTypes = {
-  dense: PropTypes.bool,
   disabled: PropTypes.bool,
-  flat: PropTypes.bool,
   elegant: PropTypes.bool
 }
 
 Button.defaultProps = {
-  dense: false,
   disabled: false,
-  flat: false,
   elegant: false
 }
 
