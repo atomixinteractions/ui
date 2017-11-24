@@ -184,7 +184,7 @@ async function addToScopes(targetName, scopes) {
 
         pkg.dependencies[`@${LIBRARY_NAME}/${pathName}`] = `^${INITIAL_VERSION}`
         readme += `- ${targetName}\n`
-        index += `export ${targetName} from '@${LIBRARY_NAME}/${pathName}'\n`
+        index += `export { ${targetName} } from '@${LIBRARY_NAME}/${pathName}'\n`
 
         await writeFile(packagePath, JSON.stringify(pkg, 2, 2), { encoding: 'utf8' })
         await writeFile(readmePath, readme, { encoding: 'utf8' })
