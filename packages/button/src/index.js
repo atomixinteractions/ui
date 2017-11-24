@@ -42,38 +42,15 @@ export const Button = styled.div`
     color: rgba(0,0,0,.26);
   }
 
-  ${ifProp('dense', css`
-    font-size: 13px;
-    height: 32px;
-    padding: 0 8px;
-  `)}
-
-  ${ifProp('flat', css`
-    min-width: 88px;
-    box-shadow: none;
-    background-color: transparent;
-
-    &:hover {
-      background-color: rgba(0,0,0,.12);
-      box-shadow: none;
-    }
-    &:active {
-      background-color: rgba(0,0,0,.26);
-      box-shadow: none;
-    }
-
-    &[disabled] {
-      color: rgba(0,0,0,.26);
-      box-shadow: none;
-    }
-  `)}
-
   ${ifProp('elegant', css`
     padding: 30px 35px;
     border-radius: 50px;
+    color: #fff;
+    background-color: #f6397a;
     box-shadow: ${shadows[10]};
 
     &:hover {
+      background-color: #f6397a;
       box-shadow: ${shadows[12]};
     }
     &:active {
