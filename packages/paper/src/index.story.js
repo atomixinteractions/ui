@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Paper from './'
+import { Paper } from './'
 
 
 storiesOf('core/Paper', module)

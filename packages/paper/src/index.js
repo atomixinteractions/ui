@@ -6,7 +6,7 @@ import { palette } from '@atomix-ui/theming'
 import { shadows, shadowTransition } from '@atomix-ui/shadow'
 
 
-const Paper = styled.div`
+export const Paper = styled.div`
   display: inline-block;
   background-color: ${palette('paper')};
   box-shadow: ${p => shadows[p.z]};
@@ -27,5 +27,3 @@ Paper.defaultProps = {
     },
   },
 }
-
-export default Paper
