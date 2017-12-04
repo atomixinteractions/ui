@@ -16,15 +16,9 @@ storiesOf('core/Button', module)
       <Button>Original button</Button>
     </div>
   ))
-  .add('Flat', () => (
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <Button flat>Flat button</Button>
-      <Button>Original button</Button>
-    </div>
-  ))
-  .add('Dense', () => (
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <Button dense>Dense button</Button>
+  .add('Elegant', () => (
+    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+      <Button elegant>Elegant button</Button>
       <Button>Original button</Button>
     </div>
   ))
