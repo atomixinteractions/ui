@@ -1,6 +1,6 @@
 {
   "name": "@atomix-ui/shadow",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Shadows for atomix components",
   "author": "Sergey Sova <mail@sergeysova.com> (httsp://sergeysova.com)",
   "publishConfig": {

@@ -1,6 +1,6 @@
 {
   "name": "@atomix-ui/paper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Paper components present shadows and elevation",
   "author": "Sergey Sova <mail@sergeysova.com> (httsp://sergeysova.com)",
   "publishConfig": {
@@ -28,8 +28,8 @@
     "react"
   ],
   "dependencies": {
-    "@atomix-ui/shadow": "^0.0.2",
-    "@atomix-ui/theming": "^0.1.0"
+    "@atomix-ui/shadow": "^0.0.3",
+    "@atomix-ui/theming": "^0.1.1"
   },
   "devDependencies": {
     "prop-types": "^15.5.10",

@@ -1,6 +1,6 @@
 {
   "name": "@atomix-ui/theming",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Themes shortcuts for atomix-ui",
   "author": "Sergey Sova <mail@sergeysova.com> (httsp://sergeysova.com)",
   "publishConfig": {
