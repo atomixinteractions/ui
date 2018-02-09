@@ -9,7 +9,7 @@ import { shadows, shadowTransition } from '@atomix-ui/shadow'
 export const Paper = styled.div`
   display: inline-block;
   background-color: ${palette('paper')};
-  box-shadow: ${p => shadows[p.z]};
+  box-shadow: ${(p) => shadows[p.z]};
   color: inherit;
   will-change: box-shadow;
   transition: ${shadowTransition};
