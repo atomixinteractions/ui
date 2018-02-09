@@ -2,11 +2,14 @@ const glob = require('glob');
 
 /**
  * @param {string} pattern
- * @param {(path: string) => string} fn
+ * @param {(path: string) => string} map
+ * @param {(path: string) => boolean} filter
  */
-const globMap = (pattern, fn) => glob.sync(pattern)
-  .map(fn || ((path) => path))
+const globMap = (pattern, map, filter) => glob.sync(pattern)
+  .map(map || ((path) => path))
   .map((path) => path.replace(/\/$/, ''))
+  .filter(filter || (() => true))
+  .map((name) => ({ name }))
 
 /**
  * Check `path` to not include substring in `variants`
@@ -38,13 +41,16 @@ module.exports = {
     { value: 'revert', name: 'revert:   Revert to a commit' },
     { value: 'wip', name: 'wip:      Work in progress' },
   ],
+
   scopes: [].concat(
     globMap('./packages/*/', (path) => path.replace(/^\.\/packages\//, '@ui/')),
     [
       { name: 'scripts' },
       { name: 'storybook' },
-    ]
+    ],
   ),
+
   allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix', 'revert'],
+  footerPrefix: '',
 }
