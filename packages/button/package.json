@@ -27,7 +27,8 @@
   "dependencies": {
     "@atomix-ui/paper": "^0.1.0",
     "@atomix-ui/shadow": "^0.0.2",
-    "@atomix-ui/theming": "^0.0.1"
+    "@atomix-ui/theming": "^0.0.1",
+    "polished": "^1.9.2"
   },
   "devDependencies": {
     "prop-types": "^15.5.10",
