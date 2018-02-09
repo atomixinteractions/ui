@@ -20,7 +20,8 @@
     "build-storybook": "NODE_ENV=production build-storybook -s public",
     "precommit": "npm run test:lint",
     "prepush": "npm test",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "-commitmsg": "commitlint -e $GIT_PARAMS",
+    "commitmsg": "cat .git/COMMIT_EDITMSG | commitlint"
   },
   "repository": {
     "type": "git",
