@@ -41,22 +41,6 @@ export const Button = styled.div`
     opacity: 88%;
     color: rgba(0,0,0,.26);
   }
-
-  ${ifProp('elegant', css`
-    padding: 30px 35px;
-    border-radius: 50px;
-    color: #fff;
-    background-color: #f6397a;
-    box-shadow: ${shadows[10]};
-
-    &:hover {
-      background-color: #f6397a;
-      box-shadow: ${shadows[12]};
-    }
-    &:active {
-      box-shadow: ${shadows[18]};
-    }
-  `)}
 `
 
 Button.propTypes = {
