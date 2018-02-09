@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { configure, addDecorator } from '@storybook/react'
+import { defaultTheme } from '../packages/theming/src'
 
 function loadStories() {
   const req = require.context('../packages/', true, /src\/\w+\.story\.js$/)
@@ -14,6 +15,10 @@ const RootDecorator = styled.div`
   padding: 30px;
 `
 
-addDecorator(fn => <RootDecorator>{fn()}</RootDecorator>)
+addDecorator((fn) => (
+  <ThemeProvider theme={defaultTheme}>
+    <RootDecorator>{fn()}</RootDecorator>
+  </ThemeProvider>
+))
 
 configure(loadStories, module)

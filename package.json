@@ -31,6 +31,7 @@
   "homepage": "https://atomix.react.design",
   "devDependencies": {
     "@atomix/eslint-config-react": "^6.1.1",
+    "@storybook/addon-actions": "^3.3.12",
     "@storybook/react": "^3.3.11",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
