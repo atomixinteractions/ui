@@ -1,3 +1,29 @@
+const glob = require('glob');
+
+/**
+ * @param {string} pattern
+ * @param {(path: string) => string} fn
+ */
+const globMap = (pattern, fn) => glob.sync(pattern)
+  .map(fn || ((path) => path))
+  .map((path) => path.replace(/\/$/, ''))
+
+/**
+ * Check `path` to not include substring in `variants`
+ * @param {string[]} variants
+ * @return {(path: string) => boolean}
+ */
+const exclude = (variants) => (path) =>
+  variants.every((variant) => !path.includes(variant))
+
+/**
+ * Check `path` to include substring of one of `variants`
+ * @param {string[]} variants
+ * @return {(path: string) => boolean}
+ */
+const include = (variants) => (path) =>
+  variants.some((variant) => path.includes(variant))
+
 module.exports = {
   types: [
     { value: 'feat', name: 'feat:     A new feature' },
@@ -12,12 +38,13 @@ module.exports = {
     { value: 'revert', name: 'revert:   Revert to a commit' },
     { value: 'wip', name: 'wip:      Work in progress' },
   ],
-  scopes: [
-    { name: '@backend' },
-    { name: '@config' },
-    { name: '@frontend' },
-    { name: '@ui' },
-  ],
+  scopes: [].concat(
+    globMap('./packages/*/', (path) => path.replace(/^\.\/packages\//, '@ui/')),
+    [
+      { name: 'scripts' },
+      { name: 'storybook' },
+    ]
+  ),
   allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix', 'revert'],
 }
