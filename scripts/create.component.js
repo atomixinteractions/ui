@@ -24,10 +24,11 @@ const LIBRARY_NAME = require('../package.json').name
 async function readPackages() {
   const packages = await glob('packages/*/package.json', { cwd: resolve(__dirname, '..') })
 
-  return (await Promise.all(packages.map(file => readFile(file, 'utf8'))))
+  return (await Promise.all(packages.map((file) => readFile(file, 'utf8'))))
     .map(JSON.parse)
     .filter((pkg) => {
       const [, name] = pkg.name.split('/')
+
       if (name && !REJECTED_PACKAGES.includes(name)) {
         return true
       }
@@ -38,7 +39,7 @@ async function readPackages() {
 
 function packagesAsList(list) {
   return list
-    .map(pkg => pkg.name.split('/')[1])
+    .map((pkg) => pkg.name.split('/')[1])
     .map(changeCase.pascalCase)
 }
 
@@ -52,11 +53,11 @@ async function createQuestions() {
       return 'Please, name a component'
     }
 
-    if (listOfPackages.map(e => e.toLowerCase()).includes(value.toLowerCase())) {
+    if (listOfPackages.map((e) => e.toLowerCase()).includes(value.toLowerCase())) {
       return 'Component with that name already exists'
     }
 
-    if (REJECTED_PACKAGES.map(e => e.toLowerCase()).includes(value.toLowerCase())) {
+    if (REJECTED_PACKAGES.map((e) => e.toLowerCase()).includes(value.toLowerCase())) {
       return 'Please, select another name for a component'
     }
 
@@ -111,6 +112,7 @@ async function findComponentFiles(baseName) {
   const baseNamePath = changeCase.paramCase(baseName)
 
   const list = await glob(`packages/${baseNamePath}/**/*`, { ignore: ['**/node_modules/**', '**/dist/**'], nodir: true })
+
   return list
 }
 
@@ -123,9 +125,10 @@ async function processComponentFiles(baseName, targetName, list) {
 
   const bar = new ProgressBar('Complete: :bar :current/:total', { total: list.length, complete: '◾', incomplete: '◽' })
 
-  for (let i = 0; i < list.length; i++) {
-    const basePath = resolve(__dirname, '..', list[i])
-    const targetPath = resolve(__dirname, '..', list[i].replace(baseNamePath, targetNamePath))
+  for (let index = 0; index < list.length; index++) {
+    const basePath = resolve(__dirname, '..', list[index])
+    const targetPath = resolve(__dirname, '..', list[index].replace(baseNamePath, targetNamePath))
+
     debug('Process file', basePath, '=>', targetPath)
 
     const baseSource = await readFile(basePath, 'utf8')
