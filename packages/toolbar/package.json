@@ -1,6 +1,6 @@
 {
   "name": "@atomix-ui/toolbar",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "{Description for Toolbar}",
   "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
   "homepage": "https://atomix.react.design",
@@ -25,9 +25,9 @@
     "react"
   ],
   "dependencies": {
-    "@atomix-ui/paper": "^0.1.0",
+    "@atomix-ui/paper": "^0.1.1",
     "@atomix-ui/shadow": "^0.0.2",
-    "@atomix-ui/theming": "^0.0.1"
+    "@atomix-ui/theming": "^0.1.0"
   },
   "devDependencies": {
     "prop-types": "^15.5.10",
