@@ -129,3 +129,4 @@ $RECYCLE.BIN/
 
 dist
 storybook-static
+package-lock.json
