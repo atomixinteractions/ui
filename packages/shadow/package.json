@@ -2,7 +2,10 @@
   "name": "@atomix-ui/shadow",
   "version": "0.0.2",
   "description": "Shadows for atomix components",
-  "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
+  "author": "Sergey Sova <mail@sergeysova.com> (httsp://sergeysova.com)",
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://atomix.react.design",
   "license": "MIT",
   "repository": "https://github.com/atomixinteractions/ui/tree/master/packages/shadow",

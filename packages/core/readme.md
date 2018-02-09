@@ -11,4 +11,3 @@ npm install --save @atomix-ui/core
 Package contains base Material styled packages:
 - Paper
 - Button
-- Toolbar

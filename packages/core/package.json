@@ -2,7 +2,6 @@
   "name": "@atomix-ui/core",
   "version": "0.0.5",
   "description": "Core atomix styled components",
-  "author": "Sergey Sova <i.am@lestad.net> (httsp://lestad.top)",
   "homepage": "https://atomix.react.design",
   "license": "MIT",
   "repository": "https://github.com/atomix-ui/tree/master/packages/core",
@@ -11,6 +10,10 @@
   "scripts": {
     "build": "babel -d dist src",
     "clean": "rimraf dist/*"
+  },
+  "author": "Sergey Sova <mail@sergeysova.com> (httsp://sergeysova.com)",
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist"
@@ -25,7 +28,6 @@
   ],
   "dependencies": {
     "@atomix-ui/button": "^0.1.0",
-    "@atomix-ui/paper": "^0.1.1",
-    "@atomix-ui/toolbar": "^0.0.4"
+    "@atomix-ui/paper": "^0.1.1"
   }
 }
